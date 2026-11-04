@@ -1,0 +1,14 @@
+.title-pokezone{
+  font-family: 'Jacques Francois Shadow', cursive;
+}
+.font-italiana{
+  font-family: 'Italiana', serif;
+}
+
+.hero-bg{
+  background-image: url("img/background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+

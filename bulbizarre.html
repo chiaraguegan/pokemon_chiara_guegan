@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PokeZone</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar is-link is-large">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <a href="index.html" class="button is-light">
+          <span class="icon mr-2"><i class="fas fa-home"></i></span>
+          <strong>Accueil</strong>
+        </a>
+      </div>
+    </div>
+
+    <div class="navbar-menu is-active">
+      <div class="navbar-start">
+        <figure class="navbar-item image is-64x48">
+          <img src="img/pokeball.png" alt="pokeball">
+        </figure>
+      </div>
+
+      <div class="navbar-item has-text-centered">
+        <h1 class="title is-1 title-pokezone">PokeZone</h1>
+      </div>
+
+      <div class="navbar-end">
+        <figure class="navbar-item image is-64x48">
+          <img src="img/pokeball.png" alt="pokeball">
+        </figure>
+
+        <div class="navbar-item">
+          <a href="index.html" class="button is-light">
+            <span class="icon"><i class="fas fa-user"></i></span>
+            <strong>Déconnexion</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero is-fullheight hero-bg">
+    <section class="section">
+      <div class="container">
+
+        <nav class="navbar is-transparent">
+          <div class="navbar-start">
+            <div class="navbar-item">
+              <span class="tag is-success-light is-size-2 font-italiana is-flex is-align-items-center">
+                <figure class="image is-96x48 mr-2">
+                  <img src="img/lot-de-10-cartes-plante-pokemon.jpg" alt="Plante">
+                </figure>
+                BULBIZARRE
+              </span>
+            </div>
+          </div>
+
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <a href="connexion.html" class="button is-link is-rounded">
+                Collection
+              </a>
+            </div>
+          </div>
+        </nav>
+
+        <div class="box has-background-success-light">
+          <div class="columns is-vcentered is-centered">
+
+            <div class="column is-3 has-text-centered">
+              <figure class="image">
+                <img src="img/1.png" alt="Bulbizarre">
+              </figure>
+            </div>
+
+            <div class="column is-3">
+              <div class="box has-shadow has-text-centered">
+
+                <p class="title is-6 font-italiana mb-4">Évolutions</p>
+
+                <div class="is-flex is-flex-direction-column is-align-items-center">
+
+                  <figure class="image is-96x96 mb-3">
+                    <img src="img/1.png" alt="Bulbizarre">
+                  </figure>
+
+                  <span class="icon is-large mb-3">
+                    <i class="fa-solid fa-chevron-down fa-2x"></i>
+                  </span>
+
+                  <figure class="image is-96x96 mb-3">
+                    <img src="img/2.png" alt="Herbizarre">
+                  </figure>
+
+                  <span class="icon is-large mb-3">
+                    <i class="fa-solid fa-chevron-down fa-2x"></i>
+                  </span>
+
+                  <figure class="image is-96x96">
+                    <img src="img/3.png" alt="Florizarre">
+                  </figure>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="column is-6">
+
+              <div class="box font-italiana">
+                <div class="is-flex is-align-items-center">
+                  <strong class="mr-2">Type :</strong>
+
+                  <figure class="image is-24x24 mr-2">
+                    <img src="img/lot-de-10-cartes-plante-pokemon.jpg" alt="Plante">
+                  </figure>
+
+                  <strong>PLANTE</strong>
+                </div>
+
+                <p class="mt-2"><strong>Taille :</strong> 0.7 m</p>
+                <p><strong>Poids :</strong> 6.9 kg</p>
+                <p><strong>Catégorie :</strong> Graine</p>
+                <p><strong>Talent :</strong> Engrais</p>
+              </div>
+
+              <div class="box mt-4 font-italiana">
+                <p>PV</p>
+                <progress class="progress is-success" value="20" max="100"></progress>
+
+                <p>Attaque</p>
+                <progress class="progress is-success" value="20" max="100"></progress>
+
+                <p>Défense</p>
+                <progress class="progress is-success" value="20" max="100"></progress>
+
+                <p>Attaque spéciale</p>
+                <progress class="progress is-success" value="30" max="100"></progress>
+
+                <p>Défense spéciale</p>
+                <progress class="progress is-success" value="30" max="100"></progress>
+
+                <p>Vitesse</p>
+                <progress class="progress is-success" value="20" max="100"></progress>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </section>
+
+  <footer class="footer has-background-link py-3">
+    <div class="columns is-mobile is-centered is-multiline">
+
+      <div class="column has-text-centered is-narrow">
+        <a href="https://www.youtube.com/@OfficialPoke%CC%81monTV" class="icon is-large has-text-white">
+          <i class="fab fa-youtube fa-2x"></i>
+        </a>
+        <span class="is-size-5 has-text-white">@0fficialPokemonTV</span>
+      </div>
+
+      <div class="column has-text-centered is-narrow">
+        <a href="https://www.instagram.com/pokemon/" class="icon is-large has-text-white">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <span class="is-size-5 has-text-white">@Pokemon</span>
+      </div>
+
+      <div class="column has-text-centered is-narrow">
+        <a href="https://www.twitch.tv/pokemon?lang=fr" class="icon is-large has-text-white">
+          <i class="fab fa-twitch fa-2x"></i>
+        </a>
+        <span class="is-size-5 has-text-white">@Pokemon</span>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PokeZone</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar is-link is-large">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <a href="index.html" class="button is-light">
+          <span class="icon mr-2"><i class="fas fa-home"></i></span>
+          <strong>Accueil</strong>
+        </a>
+      </div>
+    </div>
+
+    <div class="navbar-menu is-active">
+      <div class="navbar-start">
+        <figure class="navbar-item image is-64x48">
+          <img src="img/pokeball.png" alt="pokeball">
+        </figure>
+      </div>
+
+      <div class="navbar-item has-text-centered">
+        <h1 class="title is-1 title-pokezone">PokeZone</h1>
+      </div>
+
+      <div class="navbar-end">
+        <figure class="navbar-item image is-64x48">
+          <img src="img/pokeball.png" alt="pokeball">
+        </figure>
+
+        <div class="navbar-item">
+          <a href="index.html" class="button is-light">
+            <span class="icon"><i class="fas fa-user"></i></span>
+            <strong>Deconnexion</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero is-fullheight hero-bg">
+
+    <nav class="navbar is-transparent px-4 py-3">
+      <div class="navbar-start">
+        <div class="navbar-item">
+          <span class="tag is-info is-size-3 font-italiana">COLLECTION</span>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field">
+            <div class="control has-icons-right">
+              <input class="input is-rounded is-medium" type="text" placeholder="Recherche...">
+              <span class="icon is-right"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+
+          <div class="column is-3">
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span>FILTRES</span>
+                  <span class="icon is-small">
+                    <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </button>
+              </div>
+
+              <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                <div class="dropdown-content">
+                  <a href="type_feu.html" class="dropdown-item">Feu</a>
+                  <a href="type_eau.html" class="dropdown-item">Eau</a>
+                  <a href="type_plante.html" class="dropdown-item">Plante</a>
+                  <hr class="dropdown-divider">
+                  <a href="type_tous.html" class="dropdown-item">Tous</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-9">
+            <div class="columns is-multiline is-variable is-4">
+
+              <div class="column is-4">
+                <a href="bulbizarre.html">
+                  <div class="box has-background-success-light p-4">
+
+                    <nav class="level is-mobile mb-3">
+                      <div class="level-left">
+                        <figure class="image is-48x48">
+                          <img src="img/lot-de-10-cartes-plante-pokemon.jpg" alt="Énergie Plante">
+                        </figure>
+                      </div>
+                      <div class="level-right"></div>
+                    </nav>
+
+                    <div class="has-text-centered">
+                      <figure class="image is-96x96 mx-auto">
+                        <img src="img/1.png" alt="Bulbizarre">
+                      </figure>
+
+                      <p class="tag is-success is-medium mt-3 font-italiana">Bulbizarre</p>
+
+                      <div class="buttons are-small is-centered mt-3">
+                        <button class="button is-danger is-light qty-btn" data-action="minus"
+                          data-target="qty-bulbizarre">-</button>
+
+                        <span id="qty-bulbizarre" class="tag is-white is-medium mx-2">0</span>
+
+                        <button class="button is-success is-light qty-btn" data-action="plus"
+                          data-target="qty-bulbizarre">+</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </a>
+              </div>
+
+              <div class="column is-4">
+                <a href="herbizarre.html">
+                  <div class="box has-background-success-light p-4">
+
+                    <nav class="level is-mobile mb-3">
+                      <div class="level-left">
+                        <figure class="image is-48x48">
+                          <img src="img/lot-de-10-cartes-plante-pokemon.jpg" alt="Énergie Plante">
+                        </figure>
+                      </div>
+                      <div class="level-right"></div>
+                    </nav>
+
+                    <div class="has-text-centered">
+                      <figure class="image is-96x96 mx-auto">
+                        <img src="img/2.png" alt="Herbizarre">
+                      </figure>
+
+                      <p class="tag is-success is-medium mt-3 font-italiana">Herbizarre</p>
+
+                      <div class="buttons are-small is-centered mt-3">
+                        <button class="button is-danger is-light qty-btn" data-action="minus"
+                          data-target="qty-herbizarre">-</button>
+
+                        <span id="qty-herbizarre" class="tag is-white is-medium mx-2">0</span>
+
+                        <button class="button is-success is-light qty-btn" data-action="plus"
+                          data-target="qty-herbizarre">+</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </a>
+              </div>
+
+              <div class="column is-4">
+                <a href="florizarre.html">
+                  <div class="box has-background-success-light p-4">
+
+                    <nav class="level is-mobile mb-3">
+                      <div class="level-left">
+                        <figure class="image is-48x48">
+                          <img src="img/lot-de-10-cartes-plante-pokemon.jpg" alt="Énergie Plante">
+                        </figure>
+                      </div>
+                      <div class="level-right"></div>
+                    </nav>
+
+                    <div class="has-text-centered">
+                      <figure class="image is-96x96 mx-auto">
+                        <img src="img/3.png" alt="Florizarre">
+                      </figure>
+
+                      <p class="tag is-success is-medium mt-3 font-italiana">Florizarre</p>
+
+                      <div class="buttons are-small is-centered mt-3">
+                        <button class="button is-danger is-light qty-btn" data-action="minus"
+                          data-target="qty-florizarre">-</button>
+
+                        <span id="qty-florizarre" class="tag is-white is-medium mx-2">0</span>
+
+                        <button class="button is-success is-light qty-btn" data-action="plus"
+                          data-target="qty-florizarre">+</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </a>
+              </div>
+
+              <div class="column is-4">
+                <a href="salameche.html">
+                  <div class="box has-background-warning-light p-4">
+
+                    <nav class="level is-mobile mb-3">
+                      <div class="level-left">
+                        <figure class="image is-48x48">
+                          <img src="img/lot-de-10-cartes-feu-pokemon.jpg" alt="Énergie Feu">
+                        </figure>
+                      </div>
+                      <div class="level-right"></div>
+                    </nav>
+
+                    <div class="has-text-centered">
+                      <figure class="image is-96x96 mx-auto">
+                        <img src="img/4.png" alt="Salamèche">
+                      </figure>
+
+                      <p class="tag is-danger is-medium mt-3 font-italiana">Salamèche</p>
+
+                      <div class="buttons are-small is-centered mt-3">
+                        <button class="button is-danger is-light qty-btn" data-action="minus"
+                          data-target="qty-salameche">-</button>
+
+                        <span id="qty-salameche" class="tag is-white is-medium mx-2">0</span>
+
+                        <button class="button is-success is-light qty-btn" data-action="plus"
+                          data-target="qty-salameche">+</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </a>
+              </div>
+
+              <div class="column is-4">
+                <a href="reptincel.html">
+                  <div class="box has-background-warning-light p-4">
+
+                    <nav class="level is-mobile mb-3">
+                      <div class="level-left">
+                        <figure class="image is-48x48">
+                          <img src="img/lot-de-10-cartes-feu-pokemon.jpg" alt="Énergie Feu">
+                        </figure>
+                      </div>
+                      <div class="level-right"></div>
+                    </nav>
+
+                    <div class="has-text-centered">
+                      <figure class="image is-96x96 mx-auto">
+                        <img src="img/5.png" alt="Reptincel">
+                      </figure>
+
+                      <p class="tag is-danger is-medium mt-3 font-italiana">Reptincel</p>
+
+                      <div class="buttons are-small is-centered mt-3">
+                        <button class="button is-danger is-light qty-btn" data-action="minus"
+                          data-target="qty-reptincel">-</button>
+
+                        <span id="qty-reptincel" class="tag is-white is-medium mx-2">0</span>
+
+                        <button class="button is-success is-light qty-btn" data-action="plus"
+                          data-target="qty-reptincel">+</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </a>
+              </div>
+
+              <div class="column is-4">
+                <a href="dracaufeu.html">
+                  <div class="box has-background-warning-light p-4">
+
+                    <nav class="level is-mobile mb-3">
+                      <div class="level-left">
+                        <figure class="image is-48x48">
+                          <img src="img/lot-de-10-cartes-feu-pokemon.jpg" alt="Énergie Feu">
+                        </figure>
+                      </div>
+                      <div class="level-right"></div>
+                    </nav>
+
+                    <div class="has-text-centered">
+                      <figure class="image is-96x96 mx-auto">
+                        <img src="img/6.png" alt="Dracaufeu">
+                      </figure>
+
+                      <p class="tag is-danger is-medium mt-3 font-italiana">Dracaufeu</p>
+
+                      <div class="buttons are-small is-centered mt-3">
+                        <button class="button is-danger is-light qty-btn" data-action="minus"
+                          data-target="qty-dracaufeu">-</button>
+
+                        <span id="qty-dracaufeu" class="tag is-white is-medium mx-2">0</span>
+
+                        <button class="button is-success is-light qty-btn" data-action="plus"
+                          data-target="qty-dracaufeu">+</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </a>
+              </div>
+
+              <div class="column is-4">
+                <a href="carapuce.html">
+                  <div class="box has-background-info-light p-4">
+
+                    <nav class="level is-mobile mb-3">
+                      <div class="level-left">
+                        <figure class="image is-48x48">
+                          <img src="img/lot-de-10-cartes-eau-pokemon.jpg" alt="Énergie Eau">
+                        </figure>
+                      </div>
+                      <div class="level-right"></div>
+                    </nav>
+
+                    <div class="has-text-centered">
+                      <figure class="image is-96x96 mx-auto">
+                        <img src="img/7.png" alt="Carapuce">
+                      </figure>
+
+                      <p class="tag is-info is-medium mt-3 font-italiana">Carapuce</p>
+
+                      <div class="buttons are-small is-centered mt-3">
+                        <button class="button is-info is-light qty-btn" data-action="minus"
+                          data-target="qty-carapuce">-</button>
+
+                        <span id="qty-carapuce" class="tag is-white is-medium mx-2">0</span>
+
+                        <button class="button is-success is-light qty-btn" data-action="plus"
+                          data-target="qty-carapuce">+</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </a>
+              </div>
+
+              <div class="column is-4">
+                <a href="carabaffe.html">
+                  <div class="box has-background-info-light p-4">
+
+                    <nav class="level is-mobile mb-3">
+                      <div class="level-left">
+                        <figure class="image is-48x48">
+                          <img src="img/lot-de-10-cartes-eau-pokemon.jpg" alt="Énergie Eau">
+                        </figure>
+                      </div>
+                      <div class="level-right"></div>
+                    </nav>
+
+                    <div class="has-text-centered">
+                      <figure class="image is-96x96 mx-auto">
+                        <img src="img/8.png" alt="Carabaffe">
+                      </figure>
+
+                      <p class="tag is-info is-medium mt-3 font-italiana">Carabaffe</p>
+
+                      <div class="buttons are-small is-centered mt-3">
+                        <button class="button is-info is-light qty-btn" data-action="minus"
+                          data-target="qty-carabaffe">-</button>
+
+                        <span id="qty-carabaffe" class="tag is-white is-medium mx-2">0</span>
+
+                        <button class="button is-success is-light qty-btn" data-action="plus"
+                          data-target="qty-carabaffe">+</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </a>
+              </div>
+
+              <div class="column is-4">
+                <a href="tortank.html">
+                  <div class="box has-background-info-light p-4">
+
+                    <nav class="level is-mobile mb-3">
+                      <div class="level-left">
+                        <figure class="image is-48x48">
+                          <img src="img/lot-de-10-cartes-eau-pokemon.jpg" alt="Énergie Eau">
+                        </figure>
+                      </div>
+                      <div class="level-right"></div>
+                    </nav>
+
+                    <div class="has-text-centered">
+                      <figure class="image is-96x96 mx-auto">
+                        <img src="img/9.png" alt="Tortank">
+                      </figure>
+
+                      <p class="tag is-info is-medium mt-3 font-italiana">Tortank</p>
+
+                      <div class="buttons are-small is-centered mt-3">
+                        <button class="button is-info is-light qty-btn" data-action="minus"
+                          data-target="qty-tortank">-</button>
+
+                        <span id="qty-tortank" class="tag is-white is-medium mx-2">0</span>
+
+                        <button class="button is-success is-light qty-btn" data-action="plus"
+                          data-target="qty-tortank">+</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <footer class="footer has-background-link py-3">
+    <div class="columns is-mobile is-centered is-multiline">
+
+      <div class="column has-text-centered is-narrow">
+        <a href="https://www.youtube.com/@OfficialPoke%CC%81monTV" class="icon is-large has-text-white">
+          <i class="fab fa-youtube fa-2x"></i>
+        </a>
+        <span class="is-size-5 has-text-white">@0fficialPokemonTV</span>
+      </div>
+
+      <div class="column has-text-centered is-narrow">
+        <a href="https://www.instagram.com/pokemon/" class="icon is-large has-text-white">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <span class="is-size-5 has-text-white">@Pokemon</span>
+      </div>
+
+      <div class="column has-text-centered is-narrow">
+        <a href="https://www.twitch.tv/pokemon?lang=fr" class="icon is-large has-text-white">
+          <i class="fab fa-twitch fa-2x"></i>
+        </a>
+        <span class="is-size-5 has-text-white">@Pokemon</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll("span[id^='qty-']").forEach(span => {
+      const saved = localStorage.getItem(span.id);
+      if (saved !== null) span.textContent = saved;
+    });
+
+    document.querySelectorAll(".qty-btn").forEach(btn => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        const span = document.getElementById(btn.dataset.target);
+        let value = Number(span.textContent) || 0;
+
+        if (btn.dataset.action === "plus") value++;
+        if (btn.dataset.action === "minus" && value > 0) value--;
+
+        span.textContent = value;
+        localStorage.setItem(span.id, value);
+      });
+    });
+  </script>
+
+</body>
+</html>
